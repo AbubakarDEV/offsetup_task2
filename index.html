@@ -76,20 +76,14 @@
 
     const a = {
         ...arr1,
-        email: arr1.find(element => element.email == "bgillbanksc@noaa.gov" ? "user@offsetup.com" : element)
+        email: arr1.find(element => element.email == "bgillbanksc@noaa.gov" )
     }
-    console.log(a)
+
+    console.log("email",a)
     // let new_array = arr1.filter(element => element.email == "bgillbanksc@noaa.gov" ? { ...element, email: 'user@offsetup.com' }:element)
     // console.log(new_array)
-
-
-
-
     // let new_array = arr1.map(element => element.email == "bgillbanksc@noaa.gov" ? { ...element, email: 'user@offsetup.com' }:element);
     // console.log(new_array)
-
-
-
 
 
     // task 3 remove 6th element from array
@@ -100,7 +94,7 @@
 
 
 
-    // task 4   multiply by 2
+    // task 4 multiply by 2
     // array map
     var b = arr3.map(x => x.ip_address.split(".")[3] * 2)
     // console.log("Multiply IP address last value by 2", b)
@@ -110,16 +104,9 @@
 
 
     // task 5 check if ip_address contains or not
-    // 1st method
-
     // find 
     var c = arr3.find(x => x.ip_address == "111.113.58.161")
     // console.log("find Ip address", c)
-
-
-
-
-
 
 </script>
 
